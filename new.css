@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+
+body {
+  font-family: "Varela Round", "Quicksand", sans-serif;
+  background: url(background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: black;
+}
+
+.postcard {
+  width: 800px;
+  height: 500px;
+  background: rgba(255, 255, 255, 0.101);
+  margin: 0 auto;
+  padding: 3em;
+}
+
+/* Media Queries para Responsividad */
+@media screen and (max-width: 768px) {
+  .postcard {
+    width: 90%;
+    height: auto;
+    padding: 2em;
+  }
+  h1 {
+    font-size: 3em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .postcard {
+    /* Mejora aplicada: se agrega display flex para facilitar la disposición en columna
+       en pantallas pequeñas. Si no deseas esta modificación, puedes eliminarla. */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+  }
+  h1 {
+    font-size: 2.5em;
+  }
+  p {
+    font-size: 16px;
+  }
+}
